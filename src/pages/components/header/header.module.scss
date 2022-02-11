@@ -1,0 +1,34 @@
+.header {
+  top: 0;
+  position: sticky;
+  box-shadow: 0 0 10px 1px var(--shadow);
+  margin-bottom: 2rem;
+  background: var(--element-bg);
+  z-index: 100;
+
+  &_inner {
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    h5 {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    &_inner {
+      width: 90%;
+      h5{
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

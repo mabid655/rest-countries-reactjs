@@ -1,0 +1,22 @@
+.themeChanger {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: inherit;
+  }
+  span {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .themeChanger {
+    span {
+      font-size: 12px;
+    }
+  }
+}

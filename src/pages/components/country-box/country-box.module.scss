@@ -1,0 +1,48 @@
+.countryContainer {
+  max-width: 280px;
+  background: var(--element-bg);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px var(--shadow);
+  overflow: hidden;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  .textBg {
+    padding: 1rem;
+    h2 {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
+
+.countryImageBg {
+  aspect-ratio: 16/10;
+  position: relative;
+  display: flex;
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.infoRow {
+  font-size: 0.7rem;
+  padding: 0 1rem 0.1rem;
+  strong::after {
+    content: ":";
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .countryContainer {
+    max-width: none;
+  }
+}
